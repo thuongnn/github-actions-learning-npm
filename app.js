@@ -52,5 +52,6 @@ mongoose.connect(Config.mongoPath, {
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log("edit feature")
+    console.log("adding feature")
     console.log('Gulp is running my app on  PORT: ' + port);
 });
