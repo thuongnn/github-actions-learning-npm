@@ -11,7 +11,7 @@ admin.initializeApp({
 });
 
 
-router.post("/", (req, res) => {
+router.post("/auth", (req, res) => {
     userController
         .login(req.body)
         .then(userInfo => {
