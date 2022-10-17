@@ -51,6 +51,5 @@ mongoose.connect(Config.mongoPath, {
 // Run server
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
-    console.log("version v1.0.3")
     console.log('Gulp is running my app on  PORT: ' + port);
 });
