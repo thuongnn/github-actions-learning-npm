@@ -1,0 +1,41 @@
+name: Publish package to the Github Repository
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: git config --global user.email "ci-bot@ssi.com.vn"
+      - run: git config --global user.name "SSI"
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: DryRun Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+        id: semantic
+        with:
+          dry_run: true
+
+      - name: Update package.json
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: npm version ${{ steps.semantic.outputs.new_release_version }}
+
+      - name: Semantic Release
+        if: steps.semantic.outputs.new_release_published == 'true'
+        uses: cycjimmy/semantic-release-action@v3
+
