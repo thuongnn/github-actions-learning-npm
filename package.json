@@ -22,33 +22,16 @@
     "branches": [
       "master"
     ],
-    "repositoryUrl": "https://github.com/thuongnn/github-actions-learning-npm.git",
-    "debug": "false",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "CHANGELOG.md",
-          "changelogTitle": "# Chat-box-app Changelog"
+          "changelogFile": "CHANGELOG.md"
         }
       ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json",
-            "CHANGELOG.md"
-          ]
-        }
-      ],
-      [
-        "@semantic-release/github",
-        {
-          "assets": []
-        }
-      ]
+      "@semantic-release/npm"
     ]
   }
 }
