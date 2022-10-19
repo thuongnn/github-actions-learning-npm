@@ -1,5 +1,12 @@
 # Chat-box-app Changelog
 
+# [1.2.0](https://github.com/thuongnn/github-actions-learning-npm/compare/v1.1.0...v1.2.0) (2022-10-19)
+
+
+### Features
+
+* **pencil:** add 'graphiteWidth' option ([ba0b07d](https://github.com/thuongnn/github-actions-learning-npm/commit/ba0b07d7688cda804dc61169cb4ee57e3838c338))
+
 # [1.1.0](https://github.com/thuongnn/github-actions-learning-npm/compare/v1.0.0...v1.1.0) (2022-10-19)
 
 
