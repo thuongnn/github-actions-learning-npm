@@ -7,6 +7,13 @@
 
 * **pencil:** add 'graphiteWidth' option ([5d8dee3](https://github.com/thuongnn/github-actions-learning-npm/commit/5d8dee37b6037e48f4fcb260c14e575b8a9fc6c2))
 
+# [1.1.0](https://github.com/thuongnn/github-actions-learning-npm/compare/v1.0.0...v1.1.0) (2022-10-19)
+
+
+### Features
+
+* **pencil:** add 'graphiteWidth' option ([5d8dee3](https://github.com/thuongnn/github-actions-learning-npm/commit/5d8dee37b6037e48f4fcb260c14e575b8a9fc6c2))
+
 # 1.0.0 (2022-10-19)
 
 
