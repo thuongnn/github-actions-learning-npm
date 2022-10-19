@@ -43,10 +43,15 @@
           ]
         }
       ],
+      "@semantic-release/npm",
       [
         "@semantic-release/github",
         {
-          "assets": []
+          "assets": [
+            "CHANGELOG.md",
+            "dist/**"
+          ],
+          "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
     ]
