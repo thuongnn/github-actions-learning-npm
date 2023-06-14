@@ -1,5 +1,15 @@
 # Chat-box-app Changelog
 
+# [1.3.0](https://github.com/thuongnn/github-actions-learning-npm/compare/v1.2.0...v1.3.0) (2023-06-14)
+
+
+### Features
+
+* add env ([88ed094](https://github.com/thuongnn/github-actions-learning-npm/commit/88ed094e5022a9de4c261c9c7bb3b1ffd78b687d))
+* dcm ([80adea4](https://github.com/thuongnn/github-actions-learning-npm/commit/80adea4d00d9cd130bd8c0cbcfebf7abd6d705f0))
+* fuc ([288e4db](https://github.com/thuongnn/github-actions-learning-npm/commit/288e4db371d01bb030377625217f4f83d2c2ed72))
+* thuongnn ([3b866fb](https://github.com/thuongnn/github-actions-learning-npm/commit/3b866fbfff424ea4ec7c39c5a13db237ea5d83cd))
+
 # [1.2.0](https://github.com/thuongnn/github-actions-learning-npm/compare/v1.1.0...v1.2.0) (2022-10-19)
 
 
